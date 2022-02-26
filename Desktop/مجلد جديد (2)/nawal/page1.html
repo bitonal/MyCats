@@ -1,91 +1,175 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>page ONE1</title>
-</head>
-<body  dir ="rtl">
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class=" navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="#">الصحة الرئيسية</a></li>
-                                    <li class="nav-item"><a  class="nav-link"href="#">الصفحة الثانية</a></li>
-                                    <li class="nav-item"><a  class="nav-link"href="#">الصفحة الثالثة</a></li>
-                        
-                            </ul>
-                    </div>
-        
-        </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSwebsite</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap');
+        body{
+            font-family: 'Readex Pro', sans-serif;
+            color: #222;
+        }
+        a{
+            text-decoration: none;
+            color: burlywood;
+        }
+        h1{
+            font-size: 2em;
+        }
+        p::first-letter{
+            font-size:2em ;
+            color:brown;
+        } 
+        #sidemenu p::first-letter{
     
-        
+            color:white;
+        } 
+
+        .logo{
+            font-size: 2em;
+        }
+        .Container{
+            width: 1080px;
+            margin: auto;
+            background-color: beige;
+            padding: 10px;
+        }
+        nav{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+        }
+        nav ul li{
+            list-style-type: none;
+            display:inline-block;
+            width: 150px;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav a:hover{
+
+            background-color: rgb(189, 86, 45);
+            color: #000;
+        }
+        .Header-container header{
+            background-color: black;
+            color:white;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+       
+        #contant{
+            background-color: white;
+            color: black;
+            width: 56%;
+            float: left;
+            min-height: 500px;
+            padding:5px 2% ;
+        }
+        #sidemenu{
+            
+            width: 36%;
+            float: right;
+            padding:0 2% ;
+        }
+        #sidemenu ul{
+            
+            margin: 0;
+            padding:0;
+
+        }
+        #sidemenu li{
+            list-style-type: none;
+            display: block;
+            width: 100%;
+            padding:7px;
+            background-color: black;
+        }
+        #sidemenu a{
+            text-decoration: none;
+            color:burlywood;
+        }
+        #sidemenu li:hover{
+           background-color: white;
+          
+        }
+        .Main-container{
+         background-color: brown;
+        }
+        .Footer-container{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .rcorner{
+            border-radius: 25px;
+            background-color: black;
+            padding:15px;
+        }
+        .Clearfix{ clear: both;}
 
 
+    </style>
+</head>
+<body dir="rtl">
+<div class="Container">
+    <div class="Header-container">
+    <header>
+        <div class="logo">مدونة نوال</div>
+    </header>
+    <nav>
+        <ul>
+           <li><a href="#">الرئيسية</a></li>
+           <li><a href="#">أرشيف</a></li>
+           <li><a href="#">التواصل</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--body section-->
+    <div class="Main-container">
+        <div id="contant">
+            <header><h>محتوى الصفحة الرئيسية</h> </header>
+            <p>هذه المدونه من صنعي انا <a href="#">الكاتبة نوال  العطوي</a></p>
+            <p>اليوم سوف تبدأ خطوة الألف ميل ولبدأها معاً ...جميعا أيها القراء
+            في هذه المدونة سأشارك معكم لحظاتي من خلال كتاباتي وكلاماتي التي سطرتها بقلبي ويدي
+            أرجو أن تنال إعجابكم..</p>
+            <p>ارجو أن يكون نقدكم بناء رأى من خلاله جمال أرواحكم قبل إعجابكم 
+            إنني فخوره اليوم ..فاليوم يوم مميز</p>
+            <p>22/جمادى الأخر/1443هـ</p>
+            <footer>شارك المحتوى في السوشيال ميديا</footer>
 
+        </div>
+        <aside id="sidemenu">
+            <h3>أخر المقالات</h3>
+            <div class="rcorner">
+            <ul>
+                <li><a href="#">رابط 1</a></li>
+                <li><a href="#">رابط 2</a></li>
+                <li><a href="#">رابط 3</a></li>
+                <li><a href="#">رابط 4</a></li>
+            </ul>
+        </div>
+        </aside>
+        <div class="Clearfix"></div>
+    </div>
+    <div class="Footer-container Clearfix">
+        <footer>
+           <div>
+             حقوق النشر محفوظة لصالح المدونة (c)
+           </div> 
+           <div>لمزيد من المعلومات تواصل معنا</div>
+        </footer>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-    <h1></h1>
-     <p></p>
-
-     <img src="" alt="" srcset="">
-    <form action="">
-    <label for=""></label>
-    <input type="text"  placeholder="enter your name"/>
-
-
-    <label for=""></label>
-    <input type="checkbox" name="" id=""/>
-
-
-    <label for=""></label>
-    <input type="button" value="ENTER" />
-</form>
--->
-
-
-
-<script src="jquery.js"></script>
-<script src="javascript.js"></script>
+</div>
+    
 </body>
 </html>
